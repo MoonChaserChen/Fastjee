@@ -4,9 +4,9 @@
 # redis & pool (引入fastjee-nosql-redis模块后生效)
 spring:
   redis:
-    host: localhost
-    port: 6379
-    password:
+    host: moon.tamago.cn
+    port: 6389
+    password: allen@Redis
     database: 11
     pool:
       max-active: 20  # 连接池最大连接数（使用负值表示没有限制）
@@ -21,9 +21,9 @@ persistence:
    # jdbc配置 (默认是每个微服务一个数据库,子模块请按需覆盖)
     jdbc:
       driver: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/${spring.application.name}?useUnicode=true&characterEncoding=utf8&useSSL=false
+      url: jdbc:mysql://10.163.25.97:3307/fastjee?useUnicode=true&characterEncoding=utf8&useSSL=false
       username: root
-      password: root
+      password: mysql@pfw1234
     plusConfig:
       #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
       idType: 0

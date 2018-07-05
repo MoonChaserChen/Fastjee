@@ -8,10 +8,10 @@ spring:
   # 配置中心git仓库
   cloud:
     config:
-      label: master
+      label: dev1.0
       server:
         git:
-          uri: https://gitee.com/wuwenze/Fastjee.git
+          uri: https://github.com/MoonChaserChen/Fastjee.git
           searchPaths: fastjee-config-repo
           username:
           password:
