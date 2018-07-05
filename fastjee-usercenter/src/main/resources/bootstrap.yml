@@ -10,7 +10,7 @@ spring:
       discovery:
         service-id: fastjee-config
         enabled: true
-      label: master
+      label: dev1.0
       profile: ${spring.profiles.active}
       name: ${spring.application.name}
 
